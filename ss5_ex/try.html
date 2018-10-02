@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    function isPrimenumber() {
+        var number = parseInt(prompt("enter the number : "));
+        var flag = true;
+        if (number < 2) {
+        flag = false;
+        }
+        else if (number = 2) {
+            flag = true;
+        }
+        else {
+            for (i = 2; i < number; i++) {
+                if(number % i === 0){
+                    flag = false;
+                }
+            }
+        } if (flag === true) {
+            document.write(number + " is Primenumber ");
+        } else
+            document.write(number + " is not Primenumber");
+    }
+    isPrimenumber();
+
+</script>
+
 </body>
 </html>
